@@ -16,7 +16,7 @@ const app = express();
 app.use(bodyParser.json());
 
 const corsOptions = {
-    origin: 'https://fog-frontend.vercel.app',
+    origin: process.env.FD_URL,
     methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
     credentials: true,
     optionsSuccessStatus: 200
